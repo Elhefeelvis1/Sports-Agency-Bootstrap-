@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .carousel-item img{
+        max-height: 750px;
+      }
+      .feature-icon-small {
+      width: 3rem;
+      height: 3rem;
+      }
+      .worked-with1{
+        background: url('images/Bruno_Fernandes.jpg') no-repeat center top/ cover;
+      }
+      .worked-with2{
+        background: url('images/cristiano.jpg') no-repeat center top/ cover;
+      }
+      .worked-with3{
+        background: url('images/mata.webp') no-repeat center top/ cover;
+      }
+      .feature-icon-small svg{
+        width: 1.7rem;
+        height: 1.7rem;
+      }
+      .faqs{
+        width: 100%;
+      }
+      @media screen and (min-width: 997px) {
+        nav{
+          box-shadow: 0 5px 10px rgb(181, 181, 181);
+          height: 70px;
+          width: 100%;
+          overflow: hidden;
+        }
+      }
+      @media screen and (max-width: 567px) {
+        .header{
+          display: flex;
+          flex-direction: column;
+        }
+        .header .carousel{
+          order: -1;
+        }
+      }
+    </style>
+    <title>Sports Agency</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-warning col-12 ">
+    <div class="container-fluid ps-1 pe-3 px-md-5">
+      <a class="navbar-brand" href="#"><img src="images/logo transparent.png" alt="logo" height="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse p-3" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Subscriptions
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Dashboard</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+
+  <div class="col-12 col-lg-10 header">
+    <div class="my- my-md-5 py-5 header-top">
+      <div class="text-center px-2">
+        <h1 class="display-1 fw-medium">
+          Sports Agency Inc.
+        </h1>
+        <p class="lead fw-normal">We get you into the game</p>
+      </div>
+    </div> 
+     <!--Image carousels  -->
+
+    <div id="carouselExampleCaptions" class="carousel slide ">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/Sports-agent-laws.webp" class="d-block w-100" alt="Agent holding a handball">
+          <div class="carousel-caption d-none d-md-block bg-warning rounded">
+            <h5>We are the best</h5>
+            <p>With our premium proffessional services, we stand out from the other agencies.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/linked-with-different.jpg" class="d-block w-100 img-fluid" alt="All top sports representation">
+          <div class="carousel-caption d-none d-md-block bg-warning rounded">
+            <h5>Coverage of over 10 different sports</h5>
+            <p>We have agents that are experts on different sports and their quite complicated corporate.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/signing.jpg" class="d-block w-100" alt="Peaple signing a contract">
+          <div class="carousel-caption d-none d-md-block bg-warning rounded">
+            <h5>Lorem ipsum dolor sit.</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, perferendis?</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/get-paid-well.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block bg-warning rounded">
+            <h5>Lorem, ipsum dolor.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, id. Repellat!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/learn-finance.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block bg-warning rounded">
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos tempora rerum molestias natus minima sed sapiente eveniet quo error facilis!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="">Next</span>
+      </button>
+    </div>
+
+    <!-- What we do -->
+
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 my-md-5 px-4">
+      <div class="col d-flex flex-column align-items-start gap-2">
+        <h2 class="fw-bold text-body-emphasis">We've been the top sports agency corporation</h2>
+        <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="btn btn-warning btn-lg text-decoration-underline">Register now</a>
+      </div>
+
+      <div class="col">
+        <div class="row row-cols-1 row-cols-sm-2 g-4">
+          <div class="col d-flex flex-column gap-2">
+            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-warning bg-gradient fs-4 rounded-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suitcase-lg" viewBox="0 0 16 16">
+                <path d="M5 2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2h3.5A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5H14a.5.5 0 0 1-1 0H3a.5.5 0 0 1-1 0h-.5A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2zm1 0h4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1M1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5H3V3zM15 12.5v-9a.5.5 0 0 0-.5-.5H13v10h1.5a.5.5 0 0 0 .5-.5m-3 .5V3H4v10z"/>
+              </svg>
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Professional</h4>
+            <p class="text-body-secondary">We maintain a professional relationship with our clients.</p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-warning bg-gradient fs-4 rounded-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-transparency" viewBox="0 0 16 16">
+                <path d="M0 6.5a6.5 6.5 0 0 1 12.346-2.846 6.5 6.5 0 1 1-8.691 8.691A6.5 6.5 0 0 1 0 6.5m5.144 6.358a5.5 5.5 0 1 0 7.714-7.714 6.5 6.5 0 0 1-7.714 7.714m-.733-1.269q.546.226 1.144.33l-1.474-1.474q.104.597.33 1.144m2.614.386a5.5 5.5 0 0 0 1.173-.242L4.374 7.91a6 6 0 0 0-.296 1.118zm2.157-.672q.446-.25.838-.576L5.418 6.126a6 6 0 0 0-.587.826zm1.545-1.284q.325-.39.576-.837L6.953 4.83a6 6 0 0 0-.827.587l4.6 4.602Zm1.006-1.822q.183-.562.242-1.172L9.028 4.078q-.58.096-1.118.296l3.823 3.824Zm.186-2.642a5.5 5.5 0 0 0-.33-1.144 5.5 5.5 0 0 0-1.144-.33z"/>
+              </svg>
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Transparency</h4>
+            <p class="text-body-secondary">Our communications and deals remain transparent.</p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-warning bg-gradient fs-4 rounded-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle" viewBox="0 0 16 16">
+                <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"/>
+              </svg>
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">The best</h4>
+            <p class="text-body-secondary">Access to the leading sports agents in the world.</p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-warning bg-gradient fs-4 rounded-3">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alphabet-uppercase" viewBox="0 0 16 16">
+                <path d="M1.226 10.88H0l2.056-6.26h1.42l2.047 6.26h-1.29l-.48-1.61H1.707l-.48 1.61ZM2.76 5.818h-.054l-.75 2.532H3.51zm3.217 5.062V4.62h2.56c1.09 0 1.808.582 1.808 1.54 0 .762-.444 1.22-1.05 1.372v.055c.736.074 1.365.587 1.365 1.528 0 1.119-.89 1.766-2.133 1.766zM7.18 5.55v1.675h.8c.812 0 1.171-.308 1.171-.853 0-.51-.328-.822-.898-.822zm0 2.537V9.95h.903c.951 0 1.342-.312 1.342-.909 0-.591-.382-.954-1.095-.954zm5.089-.711v.775c0 1.156.49 1.803 1.347 1.803.705 0 1.163-.454 1.212-1.096H16v.12C15.942 10.173 14.95 11 13.607 11c-1.648 0-2.573-1.073-2.573-2.849v-.78c0-1.775.934-2.871 2.573-2.871 1.347 0 2.34.849 2.393 2.087v.115h-1.172c-.05-.665-.516-1.156-1.212-1.156-.849 0-1.347.67-1.347 1.83"/>
+              </svg>
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Simple</h4>
+            <p class="text-body-secondary">With easy and simple processes, we make confusion hard.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Who we worked with -->
+    <div class="pt-5 pb-3 px-3">
+        <h2 class="display-4 text-center border-bottom border-warning py-4 fw-normal">Top People we have worked with</h2> 
+    </div>
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 px-3 ">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 worked-with1">
+            <h3 class="pt-5 my-5 display-6 lh-1 fw-bold">Bruno Fernandes</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>Manchester United</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>3d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 worked-with2">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Cristiano Ronaldo</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>Al Nassr</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>4d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1 worked-with3">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Juan Mata</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>Galatasaray</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>5d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our top Agents -->
+
+    <div class="container marketing my-5 pb-5 px-3">
+      <div class="text-center mb-5 pb-3 border-bottom border-warning">
+        <h2 class="display-4 fw-normal">Our top agents</h2>
+      </div>
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4 text-center text-md-start">
+          <img src="images/agent1.webp" alt="" class="rounded-circle mb-3" height="140" width="140">
+          <h2 class="fw-normal">Amanda Baker</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quas maiores necessitatibus nisi ut voluptates deserunt quisquam ullam, dolore soluta.</p>
+          <p><a class="btn btn-warning" href="#">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 text-center text-md-start">
+          <img src="images/agent2.jpeg" alt="" class="rounded-circle mb-3" height="140" width="140">
+          <h2 class="fw-normal">Scott Schulz</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iste nisi quaerat facilis excepturi voluptatibus placeat corporis et nesciunt natus.</p>
+          <p><a class="btn btn-warning" href="#">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 text-center text-md-start">
+          <img src="images/agent3.webp" alt="" class="rounded-circle mb-3" height="140" width="140">
+          <h2 class="fw-normal">Henry Barne</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reprehenderit dolor quae nesciunt rerum aliquid quidem perspiciatis tempora, suscipit dolorum?</p>
+          <p><a class="btn btn-warning" href="#">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      <!-- Pricing details -->
+
+      <div class="container py-5 my-5">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center ">
+          <h1 class="display-4 fw-normal text-body-emphasis pb-3 mb-4 border-bottom border-warning">Pricing</h1>
+          <p class="fs-5 text-body-dark text-md-start">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+        </div>
+      
+        <main>
+          <div class="row row-cols-1 row-cols-md-3 mb-3 mt-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-warning">
+                <div class="card-header py-3 text-bg-warning border-warning">
+                  <h4 class="my-0 fw-normal">Free</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>10 users included</li>
+                    <li>2 GB of storage</li>
+                    <li>Email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-warning text-dark">Sign up for free</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-warning">
+                <div class="card-header py-3 text-bg-warning border-warning">
+                  <h4 class="my-0 fw-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>20 users included</li>
+                    <li>10 GB of storage</li>
+                    <li>Priority email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-warning">Get started</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-warning">
+                <div class="card-header py-3 text-bg-warning border-warning">
+                  <h4 class="my-0 fw-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>30 users included</li>
+                    <li>15 GB of storage</li>
+                    <li>Phone and email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-warning">Contact us</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <h2 class="display-6 text-center mb-4">Compare plans</h2>
+      
+          <div class="table-responsive">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th style="width: 34%;"></th>
+                  <th style="width: 22%;">Free</th>
+                  <th style="width: 22%;">Pro</th>
+                  <th style="width: 22%;">Enterprise</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Public</th>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Private</th>
+                  <td></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+              </tbody>
+      
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Permissions</th>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Sharing</th>
+                  <td></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Unlimited members</th>
+                  <td></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Extra security</th>
+                  <td></td>
+                  <td></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+
+    <!-- FAQS -->
+
+    <div class="d-flex flex-column p-4 gap-4 py-md-5 align-items-center justify-content-center">
+      <div class="faqs mb-4 border-bottom border-warning text-center">
+        <h2 class="display-5">FAQS</h2>
+      </div>
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Lorem ipsum dolor sit</h6>
+              <p class="mb-0 opacity-75">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Lorem ipsum dolor sit</h6>
+              <p class="mb-0 opacity-75">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Lorem ipsum dolor sit</h6>
+              <p class="mb-0 opacity-75">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer class="pt-4 my-md-5 pt-md-5 border-top border-warning">
+    <div class="row ps-4 ps-md-0">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="images/logo transparent.png" alt="" width="200" height="">
+        <small class="d-block mb-3 text-body-secondary">© 2017–2024</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
